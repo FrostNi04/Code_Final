@@ -1,0 +1,113 @@
+{
+    "descrption":"Data about planets.",
+    "planets": [
+
+        {
+            "planetname":"SWEEPS-04" ,
+            "distance":"27710  light-years",
+            "Image":"Assets/IMG/PlanetIMG/SWEEPS-4.png",
+            "Link":"https://exoplanets.nasa.gov/exoplanet-catalog/5053/sweeps-4-b/"
+        },
+
+        {
+            "planetname":"Kepler-22b" ,
+            "distance":"635 light-years",
+            "Image":"Assets/IMG/PlanetIMG/Kepler_22b_NEW.png",
+            "Link":"https://exoplanets.nasa.gov/exoplanet-catalog/1599/kepler-22b/"
+        },
+
+        {
+            "planetname":"Kepler-7 b" ,
+            "distance":"3009 light-years",
+            "Image":"Assets/IMG/PlanetIMG/Kepler_7b-1.png",
+            "Link":"https://exoplanets.nasa.gov/exoplanet-catalog/1801/kepler-7b/"
+        },
+
+        {
+            "planetname":"Janssen" ,
+            "distance":"41 light-years",
+            "Image":"Assets/IMG/PlanetIMG/55_Cancri_e_Pose.png",
+            "Link":"https://exoplanets.nasa.gov/exoplanet-catalog/7005/55-cancri-e/"
+        },
+
+        {
+            "planetname":"Water World" ,
+            "distance":"48 light-years",
+            "Image":"Assets/IMG/PlanetIMG/GJ_1214b_New.png",
+            "Link":"https://exoplanets.nasa.gov/exoplanet-catalog/6557/gj-1214-b/"
+        },
+
+        {
+            "planetname":"GJ 1132b" ,
+            "distance":"41 light-years",
+            "Image":"Assets/IMG/PlanetIMG/GJ_1132b.png",
+            "Link":"https://exoplanets.nasa.gov/exoplanet-catalog/7106/gj-1132-b/"
+        },
+
+        {
+            "planetname":"Dimidium" ,
+            "distance":"50 light-years",
+            "Image":"Assets/IMG/PlanetIMG/51_Pegasi_b-0.png",
+            "Link":"https://exoplanets.nasa.gov/exoplanet-catalog/7001/51-pegasi-b/"
+        },
+
+        {
+            "planetname":"AU Microscopii b" ,
+            "distance":"32 light-years",
+            "Image":"Assets/IMG/PlanetIMG/Au_mic_b-0.png",
+            "Link":"https://exoplanets.nasa.gov/exoplanet-catalog/7635/au-microscopii-b/"
+        },
+
+        {
+            "planetname":"HD 189733 b" ,
+            "distance":"64 light-years",
+            "Image":"Assets/IMG/PlanetIMG/HD_189733_b.png",
+            "Link":"https://exoplanets.nasa.gov/exoplanet-catalog/6876/hd-189733-b/"
+        },
+
+        {
+            "planetname":"TrES-4 b" ,
+            "distance":"1683 light-years",
+            "Image":"Assets/IMG/PlanetIMG/TrES-4b_Redrawn.png",
+            "Link":"https://exoplanets.nasa.gov/exoplanet-catalog/5353/tres-4-b/"
+        },
+
+        {
+            "planetname":"TOI-849 b" ,
+            "distance":"31 light-years",
+            "Image":"Assets/IMG/PlanetIMG/TOI_849_b.png",
+            "Link":"https://exoplanets.nasa.gov/exoplanet-catalog/7643/toi-849-b/"
+        },
+
+        {
+            "planetname":"Moon" ,
+            "distance":"238900 miles",
+            "Image":"Assets/IMG/PlanetIMG/Moon_2019.png",
+            "Link":"https://moon.nasa.gov/inside-and-out/overview/"
+        },
+
+        {
+            "planetname":"Mars" ,
+            "distance":"230.59 million miles",
+            "Image":"Assets/IMG/PlanetIMG/Mars_2018.png",
+            "Link":"https://mars.nasa.gov/explore/mars-now/"
+        },
+
+        {
+            "planetname":"Reach" ,
+            "distance":"10.5 light-years",
+            "Image":"Assets/IMG/PlanetIMG/Kepler_16b.png",
+            "Link":"https://halo.fandom.com/wiki/Reach"
+        },
+        
+        {
+            "planetname":"Asgard" ,
+            "distance":"Ask Thor",
+            "Image":"Assets/IMG/PlanetIMG/thor.png",
+            "Link":"https://marvelcinematicuniverse.fandom.com/wiki/Asgard"
+        }
+
+       
+
+    ]
+}

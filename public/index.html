@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/gnc1wco.css">
+    <link href="style.css" rel="stylesheet">
+    </link>
+    <title>Unhappiness Lunch Center</title>
+</head>
+
+<body>
+
+    <div id="bgvid">
+        <video id="background-video" autoplay muted loop>
+            <source src="Assets/VIDEO/BGVID.mp4" type="video/mp4" />
+        </video>
+        <div class="layer"></div>
+
+    </div>
+    <audio id="myAudio" controls autoplay muted loop>
+        <source src="Assets/AUDIO/ODESZA-AMomentApart.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <!-- The Tittle Here -->
+        <div class="title">
+            <h1> Welcome to <span>IUSLC</span></h1>
+            <h2>The International Unppiness Space Launch Center</h2>
+        </div>
+
+        <!-- display the total number of interactions happend here -->
+        <div class="sub-container data-display">
+            <div class="lunchcounter" id="lunch-number">
+            </div>
+            <div class="lunchcounter" id="lunch-desc"> Total Launchs of Unhappiness</div>
+        </div>
+
+        <!-- Enter  messages here -->
+        <div class=" chat-input card">
+            <h2><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-coffee" href="#icon-coffee" />
+                </svg>Mission Control Console</h2>
+
+            <div class="small-input">
+                <label class="input">
+                    <input class="input__field chat-input-name" id="name-input" type="text" placeholder="Name" />
+                    <span class="input__label">Astronaut Name</span>
+                </label>
+
+                <label class="input ">
+                    <input class="input__field chat-input-msg" id="msg-input" type="text" placeholder="Message" />
+                    <span class="input__label">Message</span>
+                </label>
+                <div>
+                    <button class="vid-button" id="send-button" onclick="playVid()">Launch</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <video class="video-content" id="myVideo" width="100%">
+            <source src="Assets/VIDEO/liftoff.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <script>
+            let vid = document.getElementById("myVideo");
+
+            function playVid() {
+                vid.play();
+            }
+        </script>
+
+        <div class="sub-container lunch-feed ">
+            <div class="chat-header">Launch Records</div>
+            <div class="chat-box" id="chat-box-msgs"></div>
+        </div>
+
+        <div id="content-button-one" class="p-content">
+            <h2 class="p-content" id="title_planet"> Launch Rockets To See Your Planet !</h2>
+            <div class="image-display">
+                <a class="p-content" id="p-link" target="_blank">
+                    <img id="planet-image" class="p-content">
+                </a>
+            </div>
+            <button class="p-content" id="check-button" onclick="myFunction()">See Your Ranting Detail</button>
+            <script>
+                // function myFunction() {
+                //     alert("Hello! I am an alert box!");
+                // }
+
+                function myFunction() {
+
+                    if (confirm("Why bother? Your unhappiness is alreay gone!Now let's have some fun!(Please hit confirm,pleaaaaaseeee)")) {
+                        window.location.href = 'https://www.google.com/chrome/browser/index.html'
+                    }
+
+                }
+            </script>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+        <symbol id="icon-coffee" viewBox="0 0 20 20">
+            <title>icon-coffee</title>
+            <path fill="currentColor"
+                d="M15,17H14V9h3a3,3,0,0,1,3,3h0A5,5,0,0,1,15,17Zm1-6v3.83A3,3,0,0,0,18,12a1,1,0,0,0-1-1Z" />
+            <rect fill="currentColor" x="1" y="7" width="15" height="12" rx="3" ry="3" />
+            <path fill="var(--color-accent)"
+                d="M7.07,5.42a5.45,5.45,0,0,1,0-4.85,1,1,0,0,1,1.79.89,3.44,3.44,0,0,0,0,3.06,1,1,0,0,1-1.79.89Z" />
+            <path fill="var(--color-accent)"
+                d="M3.07,5.42a5.45,5.45,0,0,1,0-4.85,1,1,0,0,1,1.79.89,3.44,3.44,0,0,0,0,3.06,1,1,0,1,1-1.79.89Z" />
+            <path fill="var(--color-accent)"
+                d="M11.07,5.42a5.45,5.45,0,0,1,0-4.85,1,1,0,0,1,1.79.89,3.44,3.44,0,0,0,0,3.06,1,1,0,1,1-1.79.89Z" />
+        </symbol>
+    </svg>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
