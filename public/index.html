@@ -11,27 +11,31 @@
 </head>
 
 <body>
-
+    <!-- VIDEO BACKGROUND -->
     <div id="bgvid">
         <video id="background-video" autoplay muted loop>
             <source src="Assets/VIDEO/BGVID.mp4" type="video/mp4" />
         </video>
+        <!-- transparent layer over the video background -->
         <div class="layer"></div>
 
     </div>
+
+    <!-- Background Music Player With Control -->
     <audio id="myAudio" controls autoplay muted loop>
         <source src="Assets/AUDIO/ODESZA-AMomentApart.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
     <div class="container">
-        <!-- The Tittle Here -->
+
+        <!-- The Website Tittle -->
         <div class="title">
             <h1> Welcome to <span>IUSLC</span></h1>
             <h2>The International Unhappiness Space Launch Center</h2>
         </div>
 
-        <!-- display the total number of interactions happend here -->
+        <!-- Display the total number of Launch  here -->
         <div class="sub-container data-display">
             <div class="lunchcounter" id="lunch-number">
             </div>
@@ -40,20 +44,29 @@
 
         <!-- Enter  messages here -->
         <div class=" chat-input card">
+
+            <!-- Input Box Tittle and Icon -->
             <h2><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-coffee" href="#icon-coffee" />
                 </svg>Mission Control Console</h2>
 
+            <!-- Input Fields -->
             <div class="small-input">
                 <label class="input">
                     <input class="input__field chat-input-name" id="name-input" type="text" placeholder="Name" />
+
+                    <!-- Over Head Span -->
                     <span class="input__label">Astronaut Name</span>
                 </label>
 
                 <label class="input ">
                     <input class="input__field chat-input-msg" id="msg-input" type="text" placeholder="Message" />
+
+                    <!-- Over Head Span -->
                     <span class="input__label">Message</span>
                 </label>
+
+                <!-- Launch Button -->
                 <div>
                     <button class="vid-button" id="send-button" onclick="playVid()">Launch</button>
                 </div>
@@ -62,10 +75,13 @@
 
         </div>
 
+        <!-- Video of Rocket Launch -->
         <video class="video-content" id="myVideo" width="100%">
             <source src="Assets/VIDEO/liftoff.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
+
+        <!-- JS CODE for the video control -->
         <script>
             let vid = document.getElementById("myVideo");
 
@@ -74,24 +90,30 @@
             }
         </script>
 
+        <!-- Place to display Messages -->
         <div class="sub-container lunch-feed ">
             <div class="chat-header">Launch Records</div>
             <div class="chat-box" id="chat-box-msgs"></div>
         </div>
 
+        <!-- Place to display the specific Planet Information -->
         <div id="content-button-one" class="p-content">
+
+            <!-- Tittle -->
             <h2 class="p-content" id="title_planet"> Launch Rockets To See Your Planet !</h2>
+
+            <!-- Planet Images from JSON -->
             <div class="image-display">
                 <a class="p-content" id="p-link" target="_blank">
                     <img id="planet-image" class="p-content">
                 </a>
             </div>
-            <button class="p-content" id="check-button" onclick="myFunction()">See Your Ranting Detail</button>
-            <script>
-                // function myFunction() {
-                //     alert("Hello! I am an alert box!");
-                // }
 
+            <!-- Button For Surprise Content -->
+            <button class="p-content" id="check-button" onclick="myFunction()">See Your Ranting Detail</button>
+
+            <!-- JS CODE for alert box and the link -->
+            <script>
                 function myFunction() {
 
                     if (confirm("Why bother? Your unhappiness is alreay gone!Now let's have some fun!(Please hit confirm,pleaaaaaseeee)")) {
@@ -104,12 +126,7 @@
 
     </div>
 
-
-
-
-
-
-
+    <!-- Some Styling Code for Input Box Copied From Web -->
     <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
         <symbol id="icon-coffee" viewBox="0 0 20 20">
             <title>icon-coffee</title>

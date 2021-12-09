@@ -3,6 +3,11 @@ body {
     color: white;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(Assets/FONTS/D-DIN.ttf);
+}
+
 #background-video {
     min-width: 100%;
     min-height: 100%;
@@ -50,11 +55,6 @@ span {
     color: red;
 }
 
-@font-face {
-    font-family: myFirstFont;
-    src: url(Assets/FONTS/D-DIN.ttf);
-}
-
 .sub-container {
     display: flex;
     width: 50%;
@@ -78,6 +78,7 @@ span {
 
 p {
     margin: 20px;
+    overflow-wrap: break-word;
 }
 
 .chat-input {
@@ -90,11 +91,6 @@ p {
     flex-direction: column;
     width: 50%;
     margin-bottom: 30px;
-}
-
-.cardbox {
-    display: flex;
-    flex-direction: row;
 }
 
 input {
@@ -137,13 +133,6 @@ button {
     left: -5%;
 }
 
-#console {
-    position: relative;
-    z-index: 5;
-    bottom: 272px;
-    left: 473px;
-}
-
 .video-content {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -176,13 +165,13 @@ button {
     background-color: #1c214280;
 }
 
+#chat-box-msgs {
+    width: 130%;
+}
+
 .p-content {
     align-items: center;
     text-align: center;
-}
-
-#chat-box-msgs {
-    width: 130%;
 }
 
 #title_planet {
@@ -196,15 +185,14 @@ button {
     margin-top: 20px;
 }
 
-p {
-    overflow-wrap: break-word;
-}
-
 @media (max-width: 800px) {
     .sub-container {
         width: 75%;
     }
 }
+
+
+/* <!-- Some Styling Code for Input Box Copied From Web --> */
 
 @import url("https://rsms.me/inter/inter.css");
 :root {

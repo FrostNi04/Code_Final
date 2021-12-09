@@ -1,11 +1,11 @@
 window.addEventListener('load', function() {
 
-    //fetch chat mesage
+    //fetch chat mesage from post which from NEDB
     fetch("/messages")
         .then(response => response.json())
         .then(data => {
 
-            //display the total number of user interaction(how many people clicked "send")
+            //display the total launch number (how many people clicked "send")
             let counterEl = document.createElement('p');
             counterEl.innerHTML = data.length;
             lunchcounter.appendChild(counterEl)
@@ -73,6 +73,8 @@ window.addEventListener('load', function() {
                 let linkElement = document.getElementById('p-link');
                 let planetArray = data.planets;
                 let randomNumer = Math.floor(Math.random() * planetArray.length);
+
+                //Randomly choose planet info to a user click 
                 planet_name = planetArray[randomNumer].planetname;
                 planet_distance = planetArray[randomNumer].distance;
                 imageElement.src = planetArray[randomNumer].Image;
@@ -87,6 +89,7 @@ window.addEventListener('load', function() {
         //Send the message object to the server
         socket.emit('msg', msgObj);
 
+        //Clean Up Message Input Box After Every Click
         nameInput.value = '';
         msgInput.value = '';
     });

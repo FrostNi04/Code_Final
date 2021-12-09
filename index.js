@@ -30,16 +30,17 @@ let io = require('socket.io');
 io = new io.Server(server);
 
 //Listen for individual clients/users to connect
-io.sockets.on('connection', function (socket) {
+io.sockets.on('connection', function(socket) {
     console.log("We have a new client: " + socket.id);
 
     //Listen for a message named 'msg' from this client
-    socket.on('msg', function (data) {
+    socket.on('msg', function(data) {
+
         //Data can be numbers, strings, objects
         console.log("Received a 'msg' event");
         console.log(data);
 
-        //insert info to database
+        //Insert info to database
         db.insert(data, (err, newDocs) => {
             console.log('new doc inserted');
         })
@@ -51,7 +52,7 @@ io.sockets.on('connection', function (socket) {
     });
 
     //Listen for this client to disconnect
-    socket.on('disconnect', function () {
+    socket.on('disconnect', function() {
         console.log("A client has disconnected: " + socket.id);
     });
 });
